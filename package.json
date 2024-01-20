@@ -24,8 +24,8 @@
   },
   "dependencies": {
     "styled-components": "^6.1.8"
-  }
+  },
   "release": {
-    "branches": ["master", "next"]
+    "branches": ["main", "next"]
   }
 }
