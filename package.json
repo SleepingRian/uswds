@@ -26,6 +26,9 @@
   "dependencies": {
     "styled-components": "^6.1.8"
   },
+  "release": {
+    "branches": ["main", "next"]
+  },
   "publishConfig": {
     "access": "public"
   }
