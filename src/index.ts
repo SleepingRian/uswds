@@ -1,1 +1,1 @@
-export * from "./lib/components/Banner";
+export * from "./lib/components/Alert"
