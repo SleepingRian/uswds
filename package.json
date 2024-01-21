@@ -2,7 +2,7 @@
   "name": "@sleepingrian/uswds",
   "version": "1.0.1",
   "description": "",
-  "main": "src/index.types",
+  "main": "src/index.ts",
   "files": [
     "src/**/*"
   ],
