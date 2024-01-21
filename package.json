@@ -24,18 +24,19 @@
     "semantic-release": "^23.0.0"
   },
   "dependencies": {
+    "@sleepingrian/uswds": "^1.0.0",
     "styled-components": "^6.1.8"
   },
   "release": {
     "branches": [
-        "main"
+      "main"
     ],
     "plugins": [
-        "@semantic-release/commit-analyzer",
-        "@semantic-release/release-notes-generator",
-        "@semantic-release/npm"
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/npm"
     ]
-},
+  },
   "publishConfig": {
     "access": "public"
   }
