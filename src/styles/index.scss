@@ -1,1 +1,13 @@
-@forward "uswds";
+@use "uswds-core" with (
+    $theme-image-path: "../uswds/img",
+    $theme-show-compile-warnings: true,
+    $theme-show-notifications: false,
+    $theme-banner-background-color: "ink",
+    $theme-banner-link-color: "primary-light",
+    $theme-banner-max-width: "widescreen",
+    $theme-checkbox-border-radius: "md",
+  );
+
+  @forward 'uswds-theme';
+  @forward 'uswds';
+  @forward 'uswds-theme-custom-styles';
