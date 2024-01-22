@@ -1,6 +1,0 @@
-// Custom theme settings/USWDS overrides go here
-@use 'uswds-core' with (
-  $theme-image-path: '@uswds/uswds/dist/img',
-  $theme-font-path: '@uswds/uswds/dist/fonts',
-  $theme-show-notifications: false
-);

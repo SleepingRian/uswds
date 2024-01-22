@@ -1,4 +1,3 @@
-import './styles/index.scss'
-import '@uswds/uswds/css/uswds.css'
-
+export * from "./uswds"
 export * from "./lib/components/Alert"
+
