@@ -1,6 +1,3 @@
-import '@uswds/uswds/css/uswds.css'
-import '../../styles/index.scss'
-
 export function Alert(props) {
   return (
     <div className={`usa-alert usa-alert--${props.status || "info"}`}>
