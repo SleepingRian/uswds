@@ -25,8 +25,10 @@
   },
   "dependencies": {
     "@sleepingrian/uswds": "^1.0.0",
-    "@uswds/uswds": "3.7.1",
     "styled-components": "^6.1.8"
+  },
+  "peerDependencies": {
+    "@uswds/uswds": "3.7.1"
   },
   "release": {
     "branches": [

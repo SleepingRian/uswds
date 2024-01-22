@@ -1,93 +1,33 @@
 @use 'uswds-core' as *;
 
-.bg-info-lighter {
-  @include u-bg('info-lighter');
+// This should be set by USWDS but isn't
+// It can be removed when https://github.com/uswds/uswds/issues/4458 is fixed
+.usa-tooltip__body {
+  opacity: 0;
 }
 
-.bg-info-light {
-  @include u-bg('info-light');
+// This fixes a chromium browser bug that causes accessibility issues in the search field
+// It can be removed when https://github.com/uswds/uswds/issues/5277 is fixed
+.usa-search [type='search']::-webkit-search-cancel-button {
+  display: none;
 }
 
-.bg-info {
-  @include u-bg('info');
-}
+// This just allows buttons as well as links in the LanguageSelector. A more ideal coding for this would just be to `@extend a` here instead of copy-pasting it, but that caused a lint error
+// It can be removed when https://github.com/uswds/uswds/issues/5409 is fixed
 
-.bg-info-dark {
-  @include u-bg('info-dark');
-}
+.usa-language__submenu .usa-language__submenu-item button {
+  color: color('white');
+  display: block;
+  line-height: line-height($theme-navigation-font-family, 3);
+  padding: units(1);
+  text-decoration: none;
+  width: 100%; /* this is something that was actually missing when we were doing the extend because button widths hve different default widths than block element links */
+  &:focus {
+    outline-offset: units('neg-05');
+  }
 
-.bg-info-darker {
-  @include u-bg('info-darker');
-}
-
-.bg-error-lighter {
-  @include u-bg('error-lighter');
-}
-
-.bg-error-light {
-  @include u-bg('error-light');
-}
-
-.bg-error {
-  @include u-bg('error');
-}
-
-.bg-error-dark {
-  @include u-bg('error-dark');
-}
-
-.bg-error-darker {
-  @include u-bg('error-darker');
-}
-
-.bg-warning-lighter {
-  @include u-bg('warning-lighter');
-}
-
-.bg-warning-light {
-  @include u-bg('warning-light');
-}
-
-.bg-warning {
-  @include u-bg('warning');
-}
-
-.bg-warning-dark {
-  @include u-bg('warning-dark');
-}
-
-.bg-warning-darker {
-  @include u-bg('warning-darker');
-}
-
-.bg-success-lighter {
-  @include u-bg('success-lighter');
-}
-
-.bg-success-light {
-  @include u-bg('success-light');
-}
-
-.bg-success {
-  @include u-bg('success');
-}
-
-.bg-success-dark {
-  @include u-bg('success-dark');
-}
-
-.bg-success-darker {
-  @include u-bg('success-darker');
-}
-
-.bg-disabled-light {
-  @include u-bg('disabled-light');
-}
-
-.bg-disabled {
-  @include u-bg('disabled');
-}
-
-.bg-disabled-dark {
-  @include u-bg('disabled-dark');
+  &:hover {
+    color: color('white');
+    text-decoration: underline;
+  }
 }
