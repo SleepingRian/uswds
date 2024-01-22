@@ -1,5 +1,5 @@
 import '@uswds/uswds/css/uswds.css'
-import '@sleepingrian/src/styles/index.scss'
+import '../../styles/index.scss'
 
 export function Alert(props) {
   return (
