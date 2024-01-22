@@ -24,7 +24,7 @@
     "semantic-release": "^23.0.0"
   },
   "dependencies": {
-    "@sleepingrian/uswds": "^1.0.0",
+    "@sleepingrian/uswds": "^1.0.0"
   },
   "peerDependencies": {
     "@uswds/uswds": "3.7.1"
