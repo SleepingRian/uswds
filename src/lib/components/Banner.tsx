@@ -6,7 +6,7 @@ export function Banner() {
           <img
             aria-hidden="true"
             className="usa-banner__header-flag"
-            src="/assets/img/us_flag_small.png"
+            src="../assets/us_flag_small.png"
             alt=""
           />
         </div>
