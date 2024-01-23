@@ -10,19 +10,14 @@ export function Banner(props) {
           />
           <div className="grid-col-fill tablet:grid-col-auto" aria-hidden="true">
             <p className="usa-banner__header-text">
-              {props.text}
+              {props.Text}
             </p>
             <p className="usa-banner__header-action">
-              {props.actiontext}
+              {props.Children}
             </p>
           </div>
-          <button
-            type="button"
-            className="usa-accordion__button usa-banner__button"
-            aria-expanded="false"
-            aria-controls="gov-banner-default"
-          >
-          <span className="usa-banner__button-text">{props.actiontext}</span>
+          <button type="button" className="usa-accordion__button usa-banner__button" aria-expanded="false">
+            <span className="usa-banner__button-text">Here’s how you know</span>
           </button>
         </div>
       </div>
