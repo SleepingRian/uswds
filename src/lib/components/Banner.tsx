@@ -1,7 +1,7 @@
 export function Banner(props) {
   return (
     <header className="usa-banner__header">
-      <div className="usa-banner_inner">
+      <div className="usa-banner__inner">
         <div className="grid-col-auto">
           <img
             aria-hidden="true"
