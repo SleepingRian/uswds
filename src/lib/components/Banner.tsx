@@ -1,11 +1,12 @@
 export function Banner() {
     return (
-        <div className="usa-banner__inner">
+      <header className="usa-banner__header">
+      <div className="usa-banner__inner">
         <div className="grid-col-auto">
           <img
             aria-hidden="true"
             className="usa-banner__header-flag"
-            src="/../node_modules/@uswds/uswds/dist/img/us_flag_small.png"
+            src="/assets/img/us_flag_small.png"
             alt=""
           />
         </div>
@@ -24,5 +25,6 @@ export function Banner() {
           <span className="usa-banner__button-text">Here’s how you know</span>
         </button>
       </div>
+    </header>
     )
 }
