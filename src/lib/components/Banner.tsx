@@ -10,10 +10,10 @@ export function Banner(props) {
           />
           <div className="grid-col-fill tablet:grid-col-auto" aria-hidden="true">
             <p className="usa-banner__header-text">
-              {props.Text}
+              {props.text}
             </p>
             <p className="usa-banner__header-action">
-              {props.Children}
+              {props.children}
             </p>
           </div>
           <button type="button" className="usa-accordion__button usa-banner__button" aria-expanded="false">
