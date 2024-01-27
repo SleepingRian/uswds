@@ -3,18 +3,24 @@
 Props:
   header: string
   text: string
-  status: string (info, slim, emergency, heading, text, validation)
+  slim: boolean
+  status: string (info, emergency, heading, text, validation)
 
 */
 
-
 export function Alert(props) {
   return (
-    <div className={`usa-alert usa-alert--${props.status || "info"}`}>
+    <div
+      className={`usa-alert usa-alert--${props.status || "info"} ${
+        props.slim && "usa-alert--slim"
+      }`}
+    >
       <div className="usa-alert__body">
-        <h4 className="usa-alert__heading">
-          {props.header || "Untitled Alert"}
-        </h4>
+        {!props.slim && (
+          <h4 className="usa-alert__heading">
+            {props.header || "Untitled Alert"}
+          </h4>
+        )}
         <p className="usa-alert__text">
           {props.text}
           {props.children}
