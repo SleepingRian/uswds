@@ -1,6 +1,6 @@
 # 🦅 United States Web Design System 🦅
 
-[![npm Version](https://img.shields.io/npm/v/@sleepingrian/uswds?style=for-the-badge)](https://www.npmjs.com/package/@sleepingrian/uswds) [![npm Downloads](https://img.shields.io/npm/dt/@sleepingrian/uswds?style=for-the-badge)](https://www.npmjs.com/package/@sleepingrian/uswds) [![GitHub issues](https://img.shields.io/github/issues/@sleepingrian/uswds?style=for-the-badge&logo=github)](https://github.com/@sleepingrian/uswds/issues) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4?style=for-the-badge)]
+[![npm Version](https://img.shields.io/npm/v/@sleepingrian/uswds?style=for-the-badge)](https://www.npmjs.com/package/@sleepingrian/uswds) [![npm Downloads](https://img.shields.io/npm/dt/@sleepingrian/uswds?style=for-the-badge)](https://www.npmjs.com/package/@sleepingrian/uswds) [![GitHub issues](https://img.shields.io/github/issues/sleepingrian/uswds?style=for-the-badge&logo=github)](https://github.com/sleepingrian/uswds/issues) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4?style=for-the-badge)]
 
 The [United States Web Design System](https://designsystem.digital.gov) includes a library of open source UI components and a visual style guide for U.S. federal government websites.
 
@@ -10,7 +10,7 @@ This project has taken a simplified approach to converting USWDS components to R
 
 ## Important Notes
 
-This project tests it's components using the NextJS framework, and this framework is compatible with any React-based framework, however the current version `1.38.0` has a breaking issue with images, this will eventually be fixed but the cause is how static images are usually served differently based on the specific framework, thus using images isn't as simple as pulling them from the package itself. If you are using NextJS, you can create a `images` folder on the `public` folder and then place all of the packages `assets` folder under it, and update the image paths to /images/image.png. We do apologize for this, but it will be fixed in a future version, ASAP.
+This project tests it's components using the NextJS framework, and this library is compatible with any React-based framework, however the current version `1.38.0` has a breaking issue with images, this will eventually be fixed but the cause is how static images are usually served differently based on the specific framework, thus using images isn't as simple as pulling them from the package itself. If you are using NextJS, you can create a `images` folder on the `public` folder and then place all of the packages `assets` folder under it, and update the image paths to /images/image.png. We do apologize for this, but it will be fixed in a future version, ASAP.
 
 The project also provides default text props, for example the `<Banner/>` component hosts a owner prop which you can customize, but by default it will be set to "United States government" unless the prop is otherwise edited!
 
