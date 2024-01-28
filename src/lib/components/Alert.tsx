@@ -1,13 +1,3 @@
-/*
-
-Props:
-  header: string
-  text: string
-  slim: boolean
-  status: string (info, emergency, heading, text, validation)
-
-*/
-
 export function Alert(props) {
   return (
     <div
