@@ -6,20 +6,15 @@ export function Button(props: any) {
       <button
         className={clsx(
           "usa-button",
-
-          /* Default Style Props */
-          props.hover && "usa-button--hover",
-          props.active && "usa-button--active",
-          props.focus && "usa-focus",
-          props.unstyled && "usa-button--unstyled",
-
-          /* Secondary Style Props */
-          props.default_secondary && "usa-button--secondary",
-          props.hover_secondary && "usa-button--secondary usa-button--hover",
-          props.active_secondary && "usa-button--secondary usa-button--active",
-          props.focus_secondary && "usa-button--secondary usa-focus"
+          props.default && "usa-button",
+          props.secondary && "usa-button--secondary",
+          props.cool && "usa-button--accent-cool",
+          props.warm && "usa-button--accent-warm",
+          props.base && "usa-button--base",
+          props.outline && "usa-button--outline",
+          props.inverse && "usa-button--outline usa-button--inverse",
+          props.big && "usa-button--big"
         )}
-        /* Extra Style Props */
         disabled={props.disabled ?? false}
         aria-disabled={props.aria_disabled ?? false}
       >
